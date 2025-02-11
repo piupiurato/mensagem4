@@ -1,0 +1,168 @@
+/* Reset do Estilo */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+/* Estilo do Menu */
+.navbar {
+	background-color: steelblue;
+	padding: 15px;
+	text-align: center;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.menu-toggle {
+	display: none;
+	font-size: 30px;
+	color: white;
+	cursor: pointer;
+}
+
+/* Estilo das Secções */
+section {
+	padding: 50px;
+	text-align: center;
+}
+
+#sobre {
+	background-color: lightblue;
+}
+
+#galeria {
+	background-color: lightgray;
+}
+
+/* Grid da Galeria */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.item {
+	background-color: steelblue;
+	color: white;
+	padding: 50px;
+	font-size: 20px;
+}
+
+/* Rodapé */
+footer {
+	background-color: darkblue;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+	.nav-links {
+		display: none;
+		flex-direction: column;
+		background-color: steelblue;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		padding: 10px;
+	}
+
+	.nav-links.active {
+		display: flex;
+	}
+
+	.menu-toggle~{
+		display: block;
+		text-align: center;
+	}
+
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+
+}
+
+#interacao {
+    text-align: center;
+    padding: 20px;
+    background-color: lightyellow;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#caixa {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+}
+
+#contacto {
+	text-align: center;
+	padding: 20px;
+	background-color: lightgray;	
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	margin: auto;
+}
+
+input, textarea{
+	margin: 5px 0;
+	padding: 10px;
+	font-size: 16px;
+	width: 100%;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+button {
+	background-color: steelblue;
+	color: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+button:hover {
+	background-color: darkblue;
+}
+
+#resposta {
+	font-weight: bold;
+	margin-top: 10px;
+}
